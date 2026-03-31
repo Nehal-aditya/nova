@@ -1,0 +1,45 @@
+-- tests.nv
+-- Test missions for NOVA compiler validation
+
+test mission arithmetic() → Void {
+  let sum = 2 + 3;
+  let product = 4 * 5;
+  let quotient = 20 / 4;
+  let power = 2 ^ 3;
+  transmit(sum);
+  transmit(product);
+  transmit(quotient);
+  transmit(power);
+}
+
+test mission string_output() → Void {
+  let message = "Hello from NOVA";
+  transmit(message);
+}
+
+test mission function_calls() → Void {
+  let result = add(5, 3);
+  transmit(result);
+}
+
+mission add(a: Float, b: Float) → Float {
+  return a + b;
+}
+
+test mission comparisons() → Void {
+  let x = 5;
+  let y = 3;
+  
+  if x > y {
+    transmit("5 is greater than 3");
+  }
+}
+
+test mission nested_calls() → Void {
+  let double = multiply(add(2, 3), 2);
+  transmit(double);
+}
+
+mission multiply(a: Float, b: Float) → Float {
+  return a * b;
+}
