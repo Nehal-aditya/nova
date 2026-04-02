@@ -1,0 +1,11 @@
+[package]
+name        = "nova_typechecker"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+nova_unit_resolver = { path = "../unit_resolver" }
+thiserror          = { workspace = true }

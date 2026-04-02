@@ -1,0 +1,13 @@
+[package]
+name        = "nova_unit_resolver"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+
+[dev-dependencies]
+# no external test deps — self-contained unit tests
