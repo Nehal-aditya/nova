@@ -1,21 +1,100 @@
-```
-# Rust/Cargo build artifacts
+# Build artifacts
 target/
+build/
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Rust
 Cargo.lock
+**/*.rs.bk
+**/target/
 
-# Dependencies
-vendor/
+# C/C++ build
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
-# Logs and temp files
+# Java / Maven
+*.class
+*.jar
+*.war
+*.ear
+.classpath
+.project
+.settings/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
 *.log
 *.tmp
-
-# Editors
-.vscode/
-.idea/
-
-# Environment
+*.swp
+*.swo
+.pytest_cache/
+.mypy_cache/
 .env
 .env.local
 *.env.*
-```
+.venv/
+venv/
+myenv/
+
+# Node.js
+**/node_modules/
+
+# NOVA compiler output
+*.nv.out
+*.nvo
+nova_cache/
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
