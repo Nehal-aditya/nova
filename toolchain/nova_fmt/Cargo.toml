@@ -1,0 +1,12 @@
+[package]
+name = "nova_fmt"
+version = "0.1.0"
+edition = "2021"
+authors = ["DeepcometAI"]
+description = "NOVA Code Formatter"
+
+[dependencies]
+
+[lib]
+name = "nova_fmt"
+path = "src/lib.rs"

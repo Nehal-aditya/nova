@@ -1,0 +1,12 @@
+[package]
+name = "nebula"
+version = "0.1.0"
+edition = "2021"
+authors = ["DeepcometAI"]
+description = "NOVA Package Manager"
+
+[dependencies]
+
+[[bin]]
+name = "nebula"
+path = "src/main.rs"

@@ -1,0 +1,12 @@
+[package]
+name = "nova_ls"
+version = "0.1.0"
+edition = "2021"
+authors = ["DeepcometAI"]
+description = "NOVA Language Server"
+
+[dependencies]
+
+[lib]
+name = "nova_ls"
+path = "src/lib.rs"
