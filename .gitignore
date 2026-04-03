@@ -1,5 +1,7 @@
-```rust
-# Compiled and build artifacts
+# Build artifacts
+target/
+build/
+dist/
 *.o
 *.obj
 *.a
@@ -10,44 +12,68 @@
 *.exe
 *.out
 
-# Rust-specific
-target/
+# Rust
 Cargo.lock
 **/*.rs.bk
+**/target/
 
-# Dependencies
-**/node_modules/
-**/venv/
-**/.venv/
-**/__pycache__/
-**/.mypy_cache/
-**/.pytest_cache/
+# C/C++ build
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
-# Logs and temp files
+# Java / Maven
+*.class
+*.jar
+*.war
+*.ear
+.classpath
+.project
+.settings/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
 *.log
 *.tmp
 *.swp
 *.swo
-
-# Environment
+.pytest_cache/
+.mypy_cache/
 .env
 .env.local
 *.env.*
+.venv/
+venv/
+myenv/
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
+# Node.js
+**/node_modules/
 
-# System
-.DS_Store
-Thumbs.db
+# NOVA compiler output
+*.nv.out
+*.nvo
+nova_cache/
 
 # Coverage
 coverage/
 htmlcov/
 .coverage
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Compressed files
 *.zip
@@ -72,4 +98,3 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-```
